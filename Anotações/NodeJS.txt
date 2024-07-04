@@ -10,4 +10,6 @@ Funcionamento
 
 Iniciando Ambiente
  $npm init -y
+
+Configurando o ambiente após clonar do GitHub
  $npm install

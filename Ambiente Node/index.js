@@ -1,14 +1,11 @@
-function filtrarPares(arr) {
-    retorno = []
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 == 0) {
-            retorno.push(arr[i])
-        }
+const express = require('express') //É como o import do jsx
 
-    }
+const app = express()
 
-    return retorno
-}
-arr = []
+app.get("/test-api", function(req, res){ //Rota como se fosse www.site.com/test-api
+    //Req = requisição, da onde vêm dados que podem ser passado
+    //Res = resposta
+    res.send("NOSSA API TA FUNCIONANDO")
+})
 
-console.log(filtrarPares([10, 20, 51, 3, 2, 1, 9, 11]))
+app.listen(8000)
